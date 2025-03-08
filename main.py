@@ -4,9 +4,9 @@ import sys
 import os
 sys.path.append(os.path.abspath(os.path.dirname(__file__)))
 from fastapi import FastAPI
-from database import engine
-import models #database
-from config import settings
+from app.database import engine
+import app.models #database
+from app.config import settings
 from fastapi.middleware.cors import CORSMiddleware
 
 
