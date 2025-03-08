@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "fastapi-course"
+version = "0.1.0"
+description = ""
+authors = ["Vinicius Torres <vini.guerra2@hotmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+fastapi = {extras = ["standard"], version = "^0.115.7"}
+faker = "^35.0.0"
+psycopg2-binary = "^2.9.10"
+sqlalchemy = "^2.0.37"
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+pyjwt = "^2.10.1"
+pydantic-settings = "^2.8.0"
+alembic = "^1.14.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
