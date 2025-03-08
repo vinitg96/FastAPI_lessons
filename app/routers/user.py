@@ -1,9 +1,9 @@
 from fastapi import Depends, status, HTTPException, APIRouter
-import models, schemas
-from database import get_db
+from .. import models, schemas
+from ..database import get_db
 from sqlalchemy.orm import Session
 from typing import List
-from utils import hahsing_password
+from ..utils import hahsing_password
 
 
 router = APIRouter(
